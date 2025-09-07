@@ -1,3 +1,6 @@
+package id.ac.polban.service;
+
+import id.ac.polban.model.*;
 import java.util.*;
 
 public class RumahSakitApp {

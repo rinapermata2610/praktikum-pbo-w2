@@ -1,3 +1,5 @@
+package id.ac.polban.model;
+
 public class Dokter {
     private String idDokter;
     private String nama;

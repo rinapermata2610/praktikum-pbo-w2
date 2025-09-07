@@ -1,8 +1,10 @@
+package id.ac.polban.model;
+
 public class Pasien {
     private String idPasien;
     private String nama;
     private int umur;
-    private RekamMedis rekamMedis; // hubungan composition
+    private RekamMedis rekamMedis; // composition
 
     public Pasien(String idPasien, String nama, int umur) {
         this.idPasien = idPasien;
