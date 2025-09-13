@@ -1,20 +1,15 @@
 package id.ac.polban.model;
 
-public class Pasien {
-    private String idPasien;
-    private String nama;
+public class Pasien extends Orang {
     private int umur;
-    private RekamMedis rekamMedis; // composition
+    private RekamMedis rekamMedis;
 
     public Pasien(String idPasien, String nama, int umur) {
-        this.idPasien = idPasien;
-        this.nama = nama;
+        super(idPasien, nama); // panggil constructor Orang
         this.umur = umur;
         this.rekamMedis = new RekamMedis();
     }
 
-    public String getIdPasien() { return idPasien; }
-    public String getNama() { return nama; }
     public int getUmur() { return umur; }
     public RekamMedis getRekamMedis() { return rekamMedis; }
 
@@ -24,6 +19,6 @@ public class Pasien {
 
     @Override
     public String toString() {
-        return "Pasien[id=" + idPasien + ", nama=" + nama + ", umur=" + umur + "]";
+        return "Pasien: " + super.toString() + ", umur=" + umur;
     }
 }

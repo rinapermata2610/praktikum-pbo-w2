@@ -1,22 +1,17 @@
 package id.ac.polban.model;
 
-public class Dokter {
-    private String idDokter;
-    private String nama;
+public class Dokter extends Orang {
     private String spesialis;
 
     public Dokter(String idDokter, String nama, String spesialis) {
-        this.idDokter = idDokter;
-        this.nama = nama;
+        super(idDokter, nama); // panggil constructor Orang
         this.spesialis = spesialis;
     }
 
-    public String getIdDokter() { return idDokter; }
-    public String getNama() { return nama; }
     public String getSpesialis() { return spesialis; }
 
     @Override
     public String toString() {
-        return "Dokter[id=" + idDokter + ", nama=" + nama + ", spesialis=" + spesialis + "]";
+        return "Dokter: " + super.toString() + ", spesialis=" + spesialis;
     }
 }
