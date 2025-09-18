@@ -1,4 +1,3 @@
-
 public class TestSortable {
     public static void main(String[] args) {
         EmployeeSortable[] staff = new EmployeeSortable[3];
